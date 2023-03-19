@@ -1,56 +1,183 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My Projects</title>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <center>
-    <header>
-      <h1>My Projects</h1>
-    </header>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About</a></li>
-      </ul>
-    </nav>
-    <section id="home">
-      <h2>Welcome to My Full Stack Projects Website</h2>
-      <p>Here you can find my latest projects and experiments.</p>
-      <p>Feel free to check them out and let me know your feedback.</p>
-    </center>
-    </section>
-    <section id="projects">
-      <div class="project">
-        <h3>Project 1</h3>
-        <p>Photo Editor</p>
-        <a href="/Photo Album/index.html" target="_blank">View</a>
-      </div>
-      <div class="project">
-        <h3>Project 2</h3>
-        <p>Tic Tac Toe</p>
-        <a href="/Tic Tac Toe/index.html" target="_blank">View</a>
-      </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>Projects</title>
+    <!--REQUIRED STYLE SHEETS-->
+    <!-- BOOTSTRAP CORE STYLE CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONTAWESOME STYLE CSS -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <!--ANIMATED FONTAWESOME STYLE CSS -->
+    <link href="assets/css/font-awesome-animation.css" rel="stylesheet" />
+    <!-- VEGAS STYLE CSS -->
+    <link href="assets/scripts/vegas/jquery.vegas.min.css" rel="stylesheet" />
+    <!-- SIDE MENU STYLE CSS -->
+    <link href="assets/css/component.css" rel="stylesheet" />
+    <!-- CUSTOM STYLE CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- GOOGLE FONT -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="cbp-spmenu-push">
 
-      <div class="project">
-        <h3>Project 3</h3>
-        <p>Wordle</p>
-        <a href="/Wordle/index.html" target="_blank">View</a>
-      </div>
-    
-      <!-- Add more projects as needed -->
+    <!-- MAIN HEADING-->
+    <div class="for-full-back color-bg-one" id="main-sec">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-8 col-md-offset-2 ">
+                    <h1 class="pad-adjust"><i class="fa fa-plus faa-pulse animated"></i></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END MAIN HEADING-->
+    <!--LEFT SLIDE MENU-->
+    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+        <h3>BIWAS</h3>
+        <a href="#main-sec"><i class="fa fa-home fa-3x"></i>HOME</a>
+        <a href="#about-sec"><i class="fa fa-microphone fa-3x"></i>ABOUT</a>
+    </nav>
+
+    <div class="row" id="icon-left">
+        <div class="col-md-12">
+            <i id="showLeftPush" class="fa fa-cut fa-4x faa-horizontal animated "></i>
+        </div>
+    </div>
+    <!--END LEFT SLIDE MENU-->
+
+    <!--RIGHT SLIDE MENU-->
+    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+        <h3>SOCIAL</h3>
+        <a href="#">MY SOCIAL PRESENCE</a>
+        <a href="#"><i class="fa fa-facebook fa-3x"></i>Facebook</a>
+        <a href="#"><i class="fa fa-twitter fa-3x"></i>Twitter</a>
+        <a href="#"><i class="fa fa-linkedin fa-3x"></i>Linked In</a>
+    </nav>
+
+    <div class="row" id="icon-right">
+        <div class="col-md-12">
+            <i id="showRightPush" class="fa fa-paperclip fa-4x "></i>
+        </div>
+    </div>
+    <!--END RIGHT SLIDE MENU-->
+
+    <!--HOME SECTION-->
+    <div class="container" id="home">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <span class="head-main">Full Stack Projects</span>
+                <h2 class="head-sub-main">Govind Nandakumar</h2>
+                <!--h3 class="head-last">Here you can find my latest projects and experiments. Feel free to check them out and let me know your feedback.</h3-->
+                <a href="#about-sec" class="btn btn-danger btn-lg head-btn-one">About Me</a>
+            </div>
+        </div>
+    </div>
+    <!--END HOME SECTION-->
+
+    <!--ABOUT SECTION-->
+    <section class="for-full-back color-bg-one" id="about-sec">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-8 col-md-offset-2 ">
+                    <h1><i class="fa fa-microphone faa-pulse animated  "></i>About</h1>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-8 col-md-offset-2 ">
+                        <h4>
+                            <strong>Passionate and self motivated AI undergraduate striving to make the world a more unified and connected
+                                place. A creative thinker, proficient in 3 programming languages and working with various data structures
+                            </strong>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="about">
-      <h2>About Me</h2>
-      <a href="/Profile/MyProfile.html" target="_blank">Some information about me and my background.</a>
+    <section class="for-full-back color-white" id="about-team">
+        <div class="container">
+            <div class="row text-center g-pad-bottom">
+                <div class="col-md-8 col-md-offset-2 ">
+                    <h3>My Projects</h3>
+                    <h4>Here you can find my latest projects and experiments. Feel free to check them out and let me know your feedback.                         
+                    </h4>
+                </div>
+
+            </div>
+            <div class="row text-center g-pad-bottom">
+                <div class="col-md-12 ">
+                    <div class="col-md-3 col-sm-3 col-xs-6">
+                        <div class="team-member">
+                            <img src="assets/img/photoeditor.jpg" alt="">
+                            <h3><strong>Photo Editor </strong></h3>
+                            <a href="/Photo Album/index.html" target="_blank">View</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6">
+                        <div class="team-member">
+                            <img src="assets/img/tictactoe.png" alt="">
+                            <h3><strong>Tic Tac Toe </strong></h3>
+                            <a href="/Tic Tac Toe/index.html" target="_blank">View</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6">
+                        <div class="team-member">
+                            <img src="assets/img/wordle.png" alt="">
+                            <h3><strong>Wordle</strong></h3>
+                            <a href="/Wordle/index.html" target="_blank">View</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6">
+                        <div class="team-member">
+                            <img src="assets/img/profile.jpg" alt="">
+                            <h3><strong>Profile</strong></h3>
+                            <a href="/Profile/MyProfile.html" target="_blank">View</a>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+            
+
+        </div>
     </section>
-    <footer>
-      <p>&copy; 2023 My Projects</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+    <!--END ABOUT SECTION-->
+
+  
+    <!-- END FOOTER SECTION -->
+
+    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY  -->
+    <script src="assets/plugins/jquery-1.10.2.js"></script>
+    <!-- BOOTSTRAP CORE SCRIPT   -->
+    <script src="assets/plugins/bootstrap.js"></script>
+    <!-- SIDE MENU SCRIPTS -->
+    <script src="assets/js/modernizr.custom.js"></script>
+    <script src="assets/js/classie.js"></script>
+    <!-- VEGAS SLIDESHOW SCRIPTS -->
+    <script src="assets/plugins/vegas/jquery.vegas.min.js"></script>
+    <!-- CUSTOM SCRIPTS -->
+    <script src="assets/js/custom.js"></script>
+
+</body>
 </html>
